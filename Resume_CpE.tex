@@ -1,0 +1,47 @@
+\documentclass[11pt,letterpaper]{article}
+\makeatletter
+\def\input@path{{./parts}}
+\makeatother
+
+\input{preamble}
+
+\titleformat{\section}
+%{\normalsize\bfseries}
+{\large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+\titlespacing\section{0pt}{*1.75}{*0.8}
+
+\newcommand{\xspace}{0.25\baselineskip}
+\begin{document}
+
+\input{name-and-contact}
+%        %% PROFESSIONAL SUMMARY HERE!%%
+
+\section*{EDUCATION}
+    \input{Education/UTA-BsCpE}
+
+\section*{SKILLS}
+    \input{skills-CpE} %\\
+    %\input{soft-skills}
+
+\section*{WORK EXPERIENCE}
+    \input{Work/CSE-TA_UTA}
+
+\section*{PROJECTS}
+    \input{Projects/mav-fs}
+    \vspace{\xspace}
+    \input{Projects/haptic-cane}
+    \vspace{\xspace} %0.5
+    \input{Projects/malloc}
+    \vspace{\xspace} %0.5
+    \input{Projects/FPGA-adder-subtractor}
+
+\section{AWARDS \& HONORS}
+    \input{awards-and-honors}
+
+% %% TODO: use personal projects to show interests instead
+% \section*{INTERESTS}
+% FPGA technology, Machine learning, AI, Computer hardware/software design, Cybersecurity and IoT, Playing the bass guitar
+\end{document}

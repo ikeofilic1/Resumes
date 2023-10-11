@@ -1,0 +1,41 @@
+\documentclass[11pt,letterpaper]{article}
+\makeatletter
+\def\input@path{{./parts}}
+\makeatother
+
+\input{preamble}
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+\titlespacing\section{0pt}{*2}{*0.75}
+
+\newcommand{\xspace}{0.7\baselineskip}
+\begin{document}
+
+\input{name-and-contact}
+
+%!        %% PROFESSIONAL SUMMARY HERE!%%
+\section*{EDUCATION} %%Complete
+    \input{Education/UTA-BSCpE}
+
+\section*{WORK EXPERIENCE}
+    \input{Work/CSE-TA_UTA}
+    \vspace{\xspace}
+    \input{Work/Intern_EAC}
+    %% add global kitchen experience here
+
+
+\section*{SKILLS}
+    \input{skills-CS} \\
+    \input{soft-skills}
+
+
+\section{AWARDS \& HONORS}
+    \input{awards-and-honors}
+
+\section*{INTERESTS}
+    FPGA technology, Machine learning, AI, Computer hardware/software design, Cybersecurity and IoT, Playing the bass guitar
+
+\end{document}

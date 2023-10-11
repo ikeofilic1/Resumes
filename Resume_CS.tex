@@ -1,0 +1,64 @@
+\documentclass[11pt,letterpaper]{article}
+\makeatletter
+\def\input@path{{./parts}}
+\makeatother
+
+\input{preamble}
+
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+\titlespacing\section{0pt}{*2}{*0.75}
+\pagestyle{empty}
+\setlength\parindent{0pt}
+\setlist[itemize]{noitemsep, nolistsep}
+
+\begin{document}
+
+\input{name-and-contact}
+
+%        %% PROFESSIONAL SUMMARY HERE!%%
+
+\section*{SKILLS}
+    \input{skills-CS}
+
+\section*{WORK EXPERIENCE}
+\input{Work/CSE-TA_UTA}
+
+\section*{PROJECTS}
+\input{Projects/mav-fs}
+\vspace{0.3\baselineskip} %0.5
+
+% \hhfill[]{\textbf{Grading scripts}}{\textit{Mar 2023}}\\
+% {\url{https://github.com/ikeofilic1/grader}}
+% \begin{itemize}
+%     \item 
+%     \item
+% \end{itemize}
+% \vspace{0.5\baselineskip}
+
+\input{Projects/mav-sh}
+\vspace{0.3\baselineskip} %0.5
+
+\input{Projects/MASS}
+
+\section*{EDUCATION} %%Complete
+\textbf{The University of Texas at Arlington} \hfill \textbf{Arlington, TX}\\
+\hhfill[\textit]{Bachelor of Science in Computer Engineering, Minor in Mathematics}{December, 2024}
+
+\begin{itemize}
+    \item \textbf{Cummulative GPA}: 3.644,\ \ \textbf{Engineering GPA}: 3.8
+    \item \textbf{Relevant Coursework}: Algorithms and Data Structures, Operating Systems, Object-oriented Programming, Assembly Language Programming, Intro to Linear Algebra
+    % Algorithms and Data Structures, Embedded Systems, Assembly Language Programming, Digital Logic Design, Operating Systems, Electronics, Circuit Analysis, Intro to Linear Algebra
+    %\item \textbf{Awards $\&$ Honors}: Freshman Distinction Roll (4.0 GPA in first 30 hours), Dean's List Spring 2022, Sabre Holdings Outstanding Professional Computer Engineering Student Spring 2023
+%\end{itemize}
+
+%\section{AWARDS \& HONORS}
+    \item \textbf{Awards $\&$ Honors}: Freshman Distinction Roll (4.0 GPA in first 30 hours), Dean's List Spring 2022, Outstanding Professional Computer Engineering Student Award Spring 2023, NSCS, Alpha Lambda Delta, and Sigma Alpha Lambda Recognition for Outstanding Performance
+\end{itemize}
+
+\section*{INTERESTS}
+FPGA technology, Machine learning, AI, Computer hardware/software design, Cybersecurity and IoT, Playing the bass guitar
+\end{document}

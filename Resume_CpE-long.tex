@@ -1,0 +1,59 @@
+\documentclass[10pt,letterpaper]{article}
+\makeatletter
+\def\input@path{{./parts}}
+\makeatother
+
+\input{preamble}
+
+\titleformat{\section}
+%{\normalsize\bfseries}
+{\large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+\titlespacing\section{0pt}{*1.7}{*0.6}
+
+\newcommand{\xspace}{0.3\baselineskip}
+\begin{document}
+
+\input{name-and-contact}
+%        %% PROFESSIONAL SUMMARY HERE!%%
+
+\section*{EDUCATION}
+    \input{Education/UTA-BsCpE}
+
+\section*{SKILLS}
+    \textbf{Programming Languages}: C, Java, C++, x86\_64 and ARM assembly, Haskell, Verilog, SystemVerilog, Python, Rust, Kotlin, JavaScript, PHP, SQL, R, Common Lisp \\
+    \textbf{Tools}: Git, \LaTeX{}, Java Swing, Vivado, Quartus Prime, Code Composer Studio, Android Studio, Linux, LTSpice\\
+    \textbf{Hardware}: Intel MAX10, Xilinx XUP Blackboard, Raspberry Pi 3, Arduino UNO, Tiva TM4C123GH6PM MCU \\
+    \input{soft-skills}
+
+\section*{WORK EXPERIENCE}
+    \input{Work/CSE-TA_UTA}
+    \vspace{0.35\baselineskip} %0.5
+    \input{Work/Intern_EAC}
+
+\section*{PROJECTS}
+    \hhfill[]{\textbf{File system in C}}{\textit{May 2023}}\\
+    {\url{https://github.com/ikeofilic1/mav-fs}}
+    \begin{itemize}
+        \item Led a team of 4 to build a command-line-interfaced index-allocated file system for a class project.
+        \item Designed the command parsing and running sytems by prioritizing scalability.
+        % \item Implemented commands such as \verb|readfile|, which reads a file from disk into the file system and \verb?list?, which lists all the files in the file system, etc
+        \item Coded 5 commands out of 13 total, using Git VCS to collaborate with teammates.
+    \end{itemize}
+
+    \vspace{\xspace}
+    \input{Projects/haptic-cane}
+    \vspace{\xspace} %0.5
+    \input{Projects/malloc}
+    \vspace{\xspace} %0.5
+    \input{Projects/FPGA-adder-subtractor}
+
+\section{AWARDS \& HONORS}
+    \input{awards-and-honors}
+
+% %% TODO: use personal projects to show interests instead
+% \section*{INTERESTS}
+% FPGA technology, Machine learning, AI, Computer hardware/software design, Cybersecurity and IoT, Playing the bass guitar
+\end{document}
