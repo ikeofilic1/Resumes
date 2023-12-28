@@ -11,7 +11,7 @@
 {}
 {0em}
 {}[\titlerule]
-\titlespacing\section{0pt}{*1.7}{*0.6}
+\titlespacing\section{0pt}{*1.56}{*0.5}
 
 \newcommand{\xspace}{0.3\baselineskip}
 \begin{document}
@@ -25,26 +25,28 @@
 \section*{SKILLS}
     \textbf{Programming Languages}: C, Java, C++, x86\_64 and ARM assembly, Haskell, Verilog, SystemVerilog, Python, Rust, Kotlin, JavaScript, PHP, SQL, R, Common Lisp \\
     \textbf{Tools}: Git, \LaTeX{}, Java Swing, Vivado, Quartus Prime, Code Composer Studio, Android Studio, Linux, LTSpice\\
-    \textbf{Hardware}: Intel MAX10, Xilinx XUP Blackboard, Raspberry Pi 3, Arduino UNO, Tiva TM4C123GH6PM MCU \\
-    \input{soft-skills}
+    \textbf{Hardware}: Intel MAX10, Xilinx XUP Blackboard, Raspberry Pi 3, Arduino UNO, Tiva TM4C123GH6PM MCU
+    %%\input{soft-skills}
 
 \section*{WORK EXPERIENCE}
+    \input{Work/HIAC}
+    \vspace{0.2\baselineskip} %0.5
     \input{Work/CSE-TA_UTA}
-    \vspace{0.35\baselineskip} %0.5
-    \input{Work/Intern_EAC}
 
 \section*{PROJECTS}
-    \hhfill[]{\textbf{File system in C}}{\textit{May 2023}}\\
-    {\url{https://github.com/ikeofilic1/mav-fs}}
-    \begin{itemize}
-        \item Led a team of 4 to build a command-line-interfaced index-allocated file system for a class project.
-        \item Designed the command parsing and running sytems by prioritizing scalability.
-        % \item Implemented commands such as \verb|readfile|, which reads a file from disk into the file system and \verb?list?, which lists all the files in the file system, etc
-        \item Coded 5 commands out of 13 total, using Git VCS to collaborate with teammates.
-    \end{itemize}
-
+    \input{Projects/wavegen}
     \vspace{\xspace}
-    \input{Projects/haptic-cane}
+    \input{Projects/mav-fs}
+    \vspace{\xspace}    
+
+\hhfill[]{\textbf{Haptic Walking Aid}}{\textit{Mar -- May 2023}}\\
+{\url{https://github.com/ikeofilic1/walking-aid}}
+\begin{itemize}
+    \item Prototyped a walking stick with haptic feedback for collision detection.
+    \item Provided an interface for users to program up to 16 personalized vibration patterns which are preserved after reboot.
+    %\item Sampled 3 ultrasonic sensors simultaneously, yielding vertical and horizontal field of views of 90 and 30 degrees respectively.
+\end{itemize}
+
     \vspace{\xspace} %0.5
     \input{Projects/malloc}
     \vspace{\xspace} %0.5
